@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./components/**/*.tsx', './pages/**/*.tsx'],
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -19,6 +20,9 @@ module.exports = {
       lineHeight: {
         tight: 1.2,
       },
+      fontFamily: {
+        sans: ['Roboto', 'Arial', 'sans-serif'],
+      },
       fontSize: {
         '5xl': '2.5rem',
         '6xl': '2.75rem',
@@ -31,5 +35,9 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require( 'tailwindcss' ),
+		// require( 'precss' ),
+		require( 'autoprefixer' )
+  ],
 }
