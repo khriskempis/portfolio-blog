@@ -4,14 +4,13 @@ import '../styles/components/hero.module.scss';
 const Intro = () => {
   return (
     <section className="hero">
-      <div className="hero-container mt-16 mb-16 md:mb-12 text-center">
+      <div className="hero-container mt-16 mb-16 md:mb-12 text-center max-w-lg mx-auto">
         <img src="" alt="" />
-        <h1 className="text-5xl mb-5 md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
+        <h1 className="text-5xl mb-5 md:text-5xl font-bold tracking-tighter leading-tight md:pr-8">
           Hey! My name is Khris
         </h1>
         <p className="text-lg">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, ex. Ex reprehenderit iusto eaque unde debitis earum optio amet velit officia neque obcaecati quae laboriosam, deleniti quo fugit. Excepturi, quos.
-        </p>
+          I'm an software engineer, musician and all-around nerd. I specialize in full-stack custom WordPress projects. I'm very comfortable working on both the back-end and front-end. Check out some of my work below.</p>
         <button className="button__learn-more mt-5 text-blue-700 py-2 px-4 rounded bg-orange-500 border border-blue-500 bg-transparent">
           Learn More
         </button>
